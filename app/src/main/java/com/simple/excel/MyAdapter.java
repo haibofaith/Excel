@@ -46,6 +46,7 @@ public class MyAdapter extends BaseAdapter {
             holder = new ViewHolder();
             view = View.inflate(context, R.layout.hor_scroll_item, null);
             holder.myHorizontalScrollView = (MyHorizontalScrollView)view.findViewById(R.id.hor_scrollview);
+            //将每一个MyHorizontalScrollView对象引用都添加到一个数组中
             mScrollLists.add((MyHorizontalScrollView) holder.myHorizontalScrollView);
             view.setTag(holder);
         } else {

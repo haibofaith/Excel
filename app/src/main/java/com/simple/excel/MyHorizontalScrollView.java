@@ -25,6 +25,7 @@ public class MyHorizontalScrollView extends HorizontalScrollView {
         activity = (MainActivity)context;
     }
 
+    //对外公开监听
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
         super.onScrollChanged(l, t, oldl, oldt);

@@ -33,6 +33,7 @@ public class MainActivity extends Activity implements OtherScroll{
         title_lin.addView(v);
         ver_list = (ListView) findViewById(R.id.ver_list);
         datas = new ArrayList<>();
+        //假数据
         for (int i = 0; i < 15; i++) {
             datas.add(i + "");
         }
@@ -40,6 +41,7 @@ public class MainActivity extends Activity implements OtherScroll{
         ver_list.setAdapter(adapter);
     }
 
+    //监听自定义MyHorizontalScrollView的滑动，对每一个MyHorizontalScrollView滑动都使其它联动
     @Override
     public void otherItemScroll(int l, int t, int oldl, int oldt) {
         for (MyHorizontalScrollView item:mScrollLists){
